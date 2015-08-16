@@ -1,0 +1,25 @@
+{
+  "assets":
+  [
+    {
+      "clientId":1,
+      "createdDate":1439717188374,
+      "subTitleTokens":[""],
+      "details":
+      {
+        "filename":"pic_1358374241.jpg",
+        "filesize":20594
+      },
+      "etag":"5",
+      "isEdited":false,
+      "type":"image",
+      "serverId":"A93429E9-333B-4308-AC8B-567099D0F7A5",
+      "titleTokens":[""],
+      "isFavorite":false,
+      "dimensions":[340,255],
+      "derivativeInfo":
+      ["original:340:255:20594:image/jpeg:1:0:1439742931011:https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY-DxKdtSSYAlNoG73Ngws-SCADoAQJC70rOB3oBVvNeOFLbBS2krr2r%2Fpic_1358374241.jpg%3Fo%3DAoxY3-y4Z0WrQBBFDNjHl9UlxV8OVGkkZYrb76Nq1m2h%26v%3D1%26x%3D3%26a%3DBf3r4Ym8wa6OAwQgLQ%26e%3D1439742931%26k%3DJPCa7VZ53eRvzNc4KXjvlw%26fl%3D%26r%3D51a65c30-730f-2d34-41d8-3e2f80ffa7fc-2%26ckc%3Dcom.apple.photos.cloud%26ckz%3DPrimarySync%26y%3D1%26z%3Dhttps%253A%252F%252Fp29-content.icloud.com%26s%3DEp_3KNjyX7yv2rteVYYP8KOPKL4:pic_1358374241.jpg","thumb:340:255:23124:image/jpeg:0:0:1439742931011:https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY03sJd1pSHBirfqprQTpVQdLHo3ATYqeBLsB5RdR7vU1KJSdsmZzzSo%2Fpic_1358374241.jpg%3Fo%3DAo4Soj8Qeg59RRcPSeXvTbmgYG7AEQCA35pkrRUexOJf%26v%3D1%26x%3D3%26a%3DBb2XkJ1mgoDhAwQgLQ%26e%3D1439742931%26k%3DmmdrrXONJOkDCNiTJGtWZw%26fl%3D%26r%3D51a65c30-730f-2d34-41d8-3e2f80ffa7fc-1%26ckc%3Dcom.apple.photos.cloud%26ckz%3DPrimarySync%26y%3D1%26z%3Dhttps%253A%252F%252Fp29-content.icloud.com%26s%3DyIp8ytbkLPaQISf_B5xMzOBapo4:pic_1358374241.jpg"]
+    }
+  ]
+}
+

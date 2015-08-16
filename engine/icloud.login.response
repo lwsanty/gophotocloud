@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "pcsEnabled": true,
+  "requestInfo": {
+    "country": "US",
+    "timeZone": "EST",
+    "region": "NJ"
+  },
+  "hasMinimumDeviceForPhotosWeb": true,
+  "apps": {
+    "keynote": {
+      "isQualifiedForBeta": true
+    },
+    "calendar": null,
+    "contacts": null,
+    "find": null,
+    "notes": null,
+    "pages": {
+      "isQualifiedForBeta": true
+    },
+    "settings": null,
+    "numbers": {
+      "isQualifiedForBeta": true
+    },
+    "iclouddrive": null,
+    "reminders": null,
+    "mail": null
+  },
+  "pcsServiceIdentitiesIncluded": true,
+  "appsOrder": [
+    "mail",
+    "contacts",
+    "calendar",
+    "notes",
+    "reminders",
+    "find",
+    "documents",
+    "pages",
+    "numbers",
+    "keynote",
+    "settings"
+  ],
+  "dsInfo": {
+    "appleIdAliases": [],
+    "firstName": "Matt",
+    "fullName": "Matt Greenwood",
+    "locked": false,
+    "aDsID": "000549-05-fac7ec14-4af4-4b81-a8cd-ea337810d675",
+    "languageCode": "en-us",
+    "brMigrated": false,
+    "statusCode": 2,
+    "primaryEmail": "mig@twosigma.com",
+    "dsid": "102970593",
+    "gilligan-enabled": "true",
+    "gilligan-invited": "true",
+    "appleId": "mig@twosigma.com",
+    "isPaidDeveloper": false,
+    "hasICloudQualifyingDevice": true,
+    "locale": "en-us_US",
+    "appleIdAlias": "",
+    "lastName": "Greenwood",
+    "iCloudAppleIdAlias": "",
+    "primaryEmailVerified": true
+  },
+  "webservices": {
+    "calendar": {
+      "url": "https:\/\/p01-calendarws.icloud.com:443",
+      "status": "active"
+    },
+    "streams": {
+      "url": "https:\/\/p01-streams.icloud.com:443",
+      "status": "active"
+    },
+    "account": {
+      "url": "https:\/\/p01-setup.icloud.com:443",
+      "status": "active",
+      "iCloudEnv": {
+        "shortId": "p"
+      }
+    },
+    "docws": {
+      "url": "https:\/\/p01-docws.icloud.com:443",
+      "status": "active",
+      "pcsRequired": true
+    },
+    "ckdatabasews": {
+      "url": "https:\/\/p01-ckdatabasews.icloud.com:443",
+      "status": "active",
+      "pcsRequired": true
+    },
+    "iwmb": {
+      "url": "https:\/\/p01-iwmb.icloud.com:443",
+      "status": "active"
+    },
+    "ubiquity": {
+      "url": "https:\/\/p01-ubiquityws.icloud.com:443",
+      "status": "active"
+    },
+    "photos": {
+      "url": "https:\/\/p01-photosws.icloud.com:443",
+      "status": "active",
+      "pcsRequired": true
+    },
+    "findme": {
+      "url": "https:\/\/p01-fmipweb.icloud.com:443",
+      "status": "active"
+    },
+    "contacts": {
+      "url": "https:\/\/p01-contactsws.icloud.com:443",
+      "status": "active"
+    },
+    "push": {
+      "url": "https:\/\/p01-pushws.icloud.com:443",
+      "status": "active"
+    },
+    "cksharews": {
+      "url": "https:\/\/p01-ckshare.icloud.com:443",
+      "status": "active"
+    },
+    "keyvalue": {
+      "url": "https:\/\/p01-keyvalueservice.icloud.com:443",
+      "status": "active"
+    },
+    "settings": {
+      "url": "https:\/\/p01-settingsws.icloud.com:443",
+      "status": "active"
+    },
+    "drivews": {
+      "url": "https:\/\/p01-drivews.icloud.com:443",
+      "status": "active",
+      "pcsRequired": true
+    },
+    "reminders": {
+      "url": "https:\/\/p01-remindersws.icloud.com:443",
+      "status": "active"
+    }
+  },
+  "isExtendedLogin": false
+}

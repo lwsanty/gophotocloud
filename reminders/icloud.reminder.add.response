@@ -1,0 +1,69 @@
+{
+  "ChangeSet": {
+    "updates": {
+      "Reminders": [
+        {
+          "order": null,
+          "guid": "16B1A955-5C2B-4827-AAF8-3F86754EF88E",
+          "completedDate": null,
+          "startDateIsAllDay": true,
+          "alarms": [],
+          "createdDate": [
+            20150316,
+            2015,
+            3,
+            16,
+            22,
+            32,
+            1352
+          ],
+          "startDateTz": null,
+          "dueDateIsAllDay": false,
+          "etag": "C=249@U=d8512f0a-cb5d-452b-97fb-6a4ad707a37a",
+          "priority": 0,
+          "dueDate": null,
+          "createdDateExtended": 448237945,
+          "pGuid": "951AFE25-6FA4-449A-A877-8FCC8B7ECB46",
+          "lastModifiedDate": [
+            20150316,
+            2015,
+            3,
+            16,
+            22,
+            32,
+            1352
+          ],
+          "title": "Another Test",
+          "recurrence": null,
+          "description": null,
+          "startDate": null
+        }
+      ],
+      "Collections": [
+        {
+          "order": 5,
+          "emailNotification": null,
+          "guid": "951AFE25-6FA4-449A-A877-8FCC8B7ECB46",
+          "createdDateExtended": null,
+          "createdDate": [
+            20150216,
+            2015,
+            2,
+            16,
+            16,
+            45,
+            1005
+          ],
+          "collectionShareType": null,
+          "participants": null,
+          "symbolicColor": "green",
+          "enabled": true,
+          "color": "#1badf8",
+          "title": "Shopping",
+          "ctag": "FT=-@RU=d8512f0a-cb5d-452b-97fb-6a4ad707a37a@S=249",
+          "isFamily": false
+        }
+      ]
+    }
+  }
+}

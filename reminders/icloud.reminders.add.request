@@ -1,0 +1,39 @@
+{
+  "ClientState": {
+    "Collections": [
+      {
+        "ctag": "FT=-@RU=d8512f0a-cb5d-452b-97fb-6a4ad707a37a@S=245",
+        "guid": "951AFE25-6FA4-449A-A877-8FCC8B7ECB46"
+      },
+      {
+        "ctag": "FT=-@RU=d8512f0a-cb5d-452b-97fb-6a4ad707a37a@S=211",
+        "guid": "99A68302-7CD8-4EE7-B47E-193E0B813A03"
+      },
+      {
+        "ctag": "FT=-@RU=d8512f0a-cb5d-452b-97fb-6a4ad707a37a@S=210",
+        "guid": "tasks"
+      }
+    ]
+  },
+  "Reminders": {
+    "isFamily": null,
+    "createdDate": null,
+    "lastModifiedDate": null,
+    "dueDateIsAllDay": false,
+    "dueDate": null,
+    "completedDate": null,
+    "startDateIsAllDay": false,
+    "startDateTz": null,
+    "startDate": null,
+    "guid": "571D956C-F3E4-4636-B94F-C6D1A8D3997B",
+    "createdDateExtended": 1425926438074,
+    "alarms": [],
+    "recurrence": null,
+    "priority": 0,
+    "order": null,
+    "etag": null,
+    "pGuid": "951AFE25-6FA4-449A-A877-8FCC8B7ECB46",
+    "description": null,
+    "title": "Test"
+  }
+}
