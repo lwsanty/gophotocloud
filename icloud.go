@@ -1,7 +1,7 @@
 package main
 import (
 	"github.com/mig2/icloud/engine"
-	"github.com/icloud/photos"
+	"github.com/lwsanty/gophotocloud/photos"
 )
 func main() {
 	eng, err := engine.NewEngine("login", "pass")
