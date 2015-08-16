@@ -4,7 +4,7 @@ import (
 	"github.com/icloud/photos"
 )
 func main() {
-	eng, err := engine.NewEngine("", "")
+	eng, err := engine.NewEngine("login", "pass")
 	if err != nil {
 		panic(err)
 	}

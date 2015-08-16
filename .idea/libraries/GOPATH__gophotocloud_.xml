@@ -76,6 +76,7 @@
       <root url="file://$PROJECT_DIR$/../../../launchpad.net/gwacl/.bzr" />
       <root url="file://$PROJECT_DIR$/../../stretchr/testify/.git" />
       <root url="file://$PROJECT_DIR$/../../dyy18/istreamdatago/thirdparty/http2/testdata" />
+      <root url="file://$PROJECT_DIR$/.git" />
       <root url="file://$PROJECT_DIR$/../../../labix.org/v2/mgo/.bzr" />
       <root url="file://$PROJECT_DIR$/../../Azure/azure-sdk-for-go/.git" />
       <root url="file://$PROJECT_DIR$/../../coreos/etcd-ca/Godeps/_workspace" />
