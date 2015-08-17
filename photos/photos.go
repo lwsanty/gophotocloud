@@ -8,10 +8,10 @@ import (
 	"net/url"
 
 	"encoding/json"
-	"github.com/mig2/icloud/engine"
 	"github.com/lwsanty/gophotocloud/download"
-	"strings"
+	"github.com/mig2/icloud/engine"
 	"strconv"
+	"strings"
 )
 
 type Error string
@@ -65,8 +65,8 @@ type IcloudFiles struct {
 
 type IcloudFile struct {
 	Filename string
-	Url string
-	Thumb string
+	Url      string
+	Thumb    string
 }
 
 func MaxValue(arr []int) (int, error) {
@@ -162,7 +162,6 @@ func DownloadContent(total *IcloudFiles) error {
 	return nil
 }
 
-
 func GetLinksAndFileNames(cloud *engine.ICloudEngine, host string, v url.Values, clientIds string, total *IcloudFiles) error {
 	var e error
 	var req_assets *http.Request
@@ -205,7 +204,7 @@ func GetLinksAndFileNames(cloud *engine.ICloudEngine, host string, v url.Values,
 		thumb := GetUrlFromJson(sthumb)
 
 		filename := asst.Assets[i].Details.Filename
-		cloudfile := IcloudFile{Filename:filename, Url:direct_links[i], Thumb: thumb}
+		cloudfile := IcloudFile{Filename: filename, Url: direct_links[i], Thumb: thumb}
 		total.ifile = append(total.ifile, cloudfile)
 
 		//download.DownloadFromUrl(direct_links[i], filename)
@@ -318,10 +317,5 @@ func NewP(cloud *engine.ICloudEngine) (*IcloudFiles, error) {
 		}
 	}
 
-
-
 	return total, nil
 }
-
-
-

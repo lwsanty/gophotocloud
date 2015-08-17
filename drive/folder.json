@@ -1,0 +1,29 @@
+[
+  {
+    "drivewsid":"FOLDER::com.apple.CloudDocs::root",
+    "docwsid":"root",
+    "zone":"com.apple.CloudDocs",
+    "name":"",
+    "etag":"3",
+    "type":"FOLDER",
+    "items":
+    [
+      {
+        "drivewsid":"FOLDER::com.apple.CloudDocs::338C2C47-9101-408D-A6F0-FA92A207F56E",
+        "docwsid":"338C2C47-9101-408D-A6F0-FA92A207F56E",
+        "etag":"c"
+      },
+      {
+        "drivewsid":"FILE::com.apple.CloudDocs::C321CA1F-4605-4754-B13D-65CD6A2A98BC",
+        "docwsid":"C321CA1F-4605-4754-B13D-65CD6A2A98BC",
+        "etag":"b::a"
+      },
+      {
+        "drivewsid":"FILE::com.apple.CloudDocs::E7E1AA4B-F870-4316-9F23-52819EBC50E8",
+        "docwsid":"E7E1AA4B-F870-4316-9F23-52819EBC50E8",
+        "etag":"9::8"
+      }
+    ],
+    "numberOfItems":3
+  }
+]

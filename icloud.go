@@ -1,27 +1,31 @@
 package main
+
 import (
-	"github.com/mig2/icloud/engine"
-	"github.com/lwsanty/gophotocloud/photos"
+	"github.com/lwsanty/gophotocloud/engine"
+	//"github.com/lwsanty/gophotocloud/photos"
+	"github.com/lwsanty/gophotocloud/drive"
+	"fmt"
 )
+
 func main() {
-	eng, err := engine.NewEngine("login", "pass")
+	eng, err := engine.NewEngine("login", "password")
 	if err != nil {
 		panic(err)
 	}
 
-	_, err2 := photos.NewP(eng)
+	iclouddrive, err2 := drive.NewD(eng)
 	if err2 != nil {
 		panic(err2)
 	}
-	/*
-	if err := photos.PrintContent(total); err != nil {
-		panic(err)
-	}
 
-	if err := photos.DownloadContent(total); err != nil {
-		panic(err)
-	}
+	fmt.Println(iclouddrive.Urls)
+	/*
+		if err := photos.PrintContent(total); err != nil {
+			panic(err)
+		}
+
+		if err := photos.DownloadContent(total); err != nil {
+			panic(err)
+		}
 	*/
 }
-
-

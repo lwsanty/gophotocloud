@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 	"net/url"
-	"github.com/mig2/icloud/engine"
-	"strings"
-	"github.com/dyy18/istreamdatago/util"
+
+	//	"strings"
+	//	"github.com/dyy18/istreamdatago/util"
 )
 
 // Types global to ICloud
@@ -48,6 +48,7 @@ type ICloudEngine struct {
 	Client          *http.Client
 	ClientID        string
 	ReportedVersion *ICloudVersion
+	Cookiez         []*http.Cookie
 	Version         uint32 `json:"version"`
 	PcsEnabled      bool   `json:"pcsEnabled"`
 	RequestInfo     struct {
@@ -70,7 +71,7 @@ type ICloudVersion struct {
 }
 
 /* ClientID is a UUID that seems to be arbitrary. This is the ClientID for this Library */
-//const ClientID = "3F93B25B-E569-4A3B-A1BC-022D4C19BF4C"
+const ClientID = "3F93B25B-E569-4A3B-A1BC-022D4C19BF4C"
 
 const versionURL = "https://www.icloud.com/system/cloudos/current/version.json"
 const loginURL = "https://setup.icloud.com/setup/ws/1/login"
@@ -109,8 +110,9 @@ func getICloudVersion(client *http.Client) (*ICloudVersion, error) {
 // Functions exported on the ICloudEngine type....
 
 func NewEngine(apple_id, password string) (engine *ICloudEngine, e error) {
+	engine = new(ICloudEngine)
 
-	engine.ClientID = strings.ToUpper(util.GenUuid())
+	engine.ClientID = ClientID //strings.ToUpper(util.GenUuid())
 
 	cookieJar, _ := cookiejar.New(nil)
 
@@ -123,7 +125,6 @@ func NewEngine(apple_id, password string) (engine *ICloudEngine, e error) {
 		return nil, e
 	}
 
-	engine = new(ICloudEngine)
 	engine.ReportedVersion = version
 	info := map[string]string{
 		"apple_id":       apple_id,
@@ -140,7 +141,7 @@ func NewEngine(apple_id, password string) (engine *ICloudEngine, e error) {
 
 	v := url.Values{}
 	v.Add("clientBuildNumber", version.BuildNumber)
-	v.Add("clientID", ClientID)
+	v.Add("clientID", engine.ClientID)
 	req.URL.RawQuery = v.Encode()
 	req.Header.Set("Content-Type", "text/plain")
 	req.Header.Add("Origin", "https://www.icloud.com")
@@ -157,8 +158,9 @@ func NewEngine(apple_id, password string) (engine *ICloudEngine, e error) {
 		return nil, e
 	}
 
+	engine.Cookiez = resp.Cookies()
+
 	json.Unmarshal(body, engine)
 	engine.Client = client
-	engine.ClientID = ClientID
 	return engine, nil
 }
