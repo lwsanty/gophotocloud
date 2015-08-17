@@ -50,7 +50,9 @@
       "dateRange":null,
       "childAssetsBinaryFeed":"/wAAAAAAAA==",
       "parentServerId":"top-level-generated",
-      "type":"album","serverId":"videos","isServerGenerated":true
+      "type":"album",
+      "serverId":"videos",
+      "isServerGenerated":true
     },
     {
       "contentsType":"asset",

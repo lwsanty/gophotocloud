@@ -9,11 +9,19 @@ func main() {
 		panic(err)
 	}
 
-	err2 := photos.NewP(eng)
+	_, err2 := photos.NewP(eng)
 	if err2 != nil {
 		panic(err2)
 	}
+	/*
+	if err := photos.PrintContent(total); err != nil {
+		panic(err)
+	}
 
+	if err := photos.DownloadContent(total); err != nil {
+		panic(err)
+	}
+	*/
 }
 
 
