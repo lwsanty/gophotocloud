@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	eng, err := engine.NewEngine("title", "cypher")
+	eng, err := engine.NewEngine("title", "cypher_")
 	if err != nil {
 		panic(err)
 	}
