@@ -9,7 +9,7 @@ import (
 
 	"encoding/json"
 	"github.com/lwsanty/gophotocloud/download"
-	"github.com/mig2/icloud/engine"
+	"github.com/lwsanty/gophotocloud/engine"
 	"strconv"
 	"strings"
 )
@@ -60,7 +60,7 @@ type Detail struct {
 }
 
 type IcloudFiles struct {
-	ifile []IcloudFile
+	Ifile []IcloudFile
 }
 
 type IcloudFile struct {
@@ -130,17 +130,17 @@ func PrintContent(total *IcloudFiles) error {
 	if total == nil {
 		return fmt.Errorf("nil")
 	}
-	if len(total.ifile) == 0 {
+	if len(total.Ifile) == 0 {
 		return fmt.Errorf("0")
 	}
-	for i := 0; i < len(total.ifile); i++ {
+	for i := 0; i < len(total.Ifile); i++ {
 		fmt.Printf("\n===========================================\n")
-		fmt.Println("filename: ", total.ifile[i].Filename)
-		fmt.Println("url: ", total.ifile[i].Url)
-		fmt.Println("thumb: ", total.ifile[i].Thumb)
+		fmt.Println("filename: ", total.Ifile[i].Filename)
+		fmt.Println("url: ", total.Ifile[i].Url)
+		fmt.Println("thumb: ", total.Ifile[i].Thumb)
 	}
 	fmt.Printf("\n===========================================\n")
-	fmt.Print("total: ", len(total.ifile))
+	fmt.Println("total: ", len(total.Ifile))
 
 	return nil
 }
@@ -149,15 +149,15 @@ func DownloadContent(total *IcloudFiles) error {
 	if total == nil {
 		return fmt.Errorf("nil")
 	}
-	if len(total.ifile) == 0 {
+	if len(total.Ifile) == 0 {
 		return fmt.Errorf("0")
 	}
-	for i := 0; i < len(total.ifile); i++ {
+	for i := 0; i < len(total.Ifile); i++ {
 		fmt.Printf("\n===========================================\n")
-		download.DownloadFromUrl(total.ifile[i].Url, total.ifile[i].Filename)
+		download.DownloadFromUrl(total.Ifile[i].Url, total.Ifile[i].Filename)
 	}
 	fmt.Printf("\n===========================================\n")
-	fmt.Print("total: ", len(total.ifile))
+	fmt.Print("total: ", len(total.Ifile))
 
 	return nil
 }
@@ -205,7 +205,7 @@ func GetLinksAndFileNames(cloud *engine.ICloudEngine, host string, v url.Values,
 
 		filename := asst.Assets[i].Details.Filename
 		cloudfile := IcloudFile{Filename: filename, Url: direct_links[i], Thumb: thumb}
-		total.ifile = append(total.ifile, cloudfile)
+		total.Ifile = append(total.Ifile, cloudfile)
 
 		//download.DownloadFromUrl(direct_links[i], filename)
 	}

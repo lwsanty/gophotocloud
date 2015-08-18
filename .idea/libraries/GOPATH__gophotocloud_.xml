@@ -37,6 +37,7 @@
       <root url="file://$PROJECT_DIR$/../../quux00/ogonori/.git" />
       <root url="file://$PROJECT_DIR$/../../../gopkg.in/tylerb/graceful.v1/.git" />
       <root url="file://$PROJECT_DIR$/../../codegangsta/cli/.git" />
+      <root url="file://$PROJECT_DIR$/../../dyy18/gfs/.idea" />
       <root url="file://$PROJECT_DIR$/../../jmcvetta/napping/.git" />
       <root url="file://$PROJECT_DIR$/../../../google.golang.org/grpc/transport/testdata" />
       <root url="file://$PROJECT_DIR$/../../../code.google.com/p/go-uuid/.hg" />
