@@ -172,6 +172,8 @@ func GetFileItemUrl(fitem *FolderItem, cloud *engine.ICloudEngine, cookie string
 	return fitem, nil
 }
 
+
+//folder string is actually folder's id like 33BF1B3A-A5D8-43F1-B960-9AB6DB055321 or so
 func GetFolderItems(cloud *engine.ICloudEngine, folder string) (*FolderItems, string, string, error) {
 	var svc engine.ICloudService
 	var svdoc engine.ICloudService

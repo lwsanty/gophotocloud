@@ -6,9 +6,15 @@ import (
 	"fmt"
 	"github.com/bgentry/speakeasy"
 	"github.com/lwsanty/gophotocloud/drive"
+	"io/ioutil"
 )
 
 func main() {
+	cloudy, _ := ioutil.ReadFile("cloudy")
+	if cloudy != nil {
+		fmt.Println(string(cloudy))
+	}
+
 	login, err := speakeasy.Ask("enter your apple id: ")
 	if err != nil {
 		panic(err)
@@ -40,6 +46,7 @@ func main() {
 		fmt.Println("name: ", fitems.Items[i].Name)
 		fmt.Println("type: ", fitems.Items[i].Type)
 		fmt.Println("url: ", fitems.Items[i].Url)
+		fmt.Println("id: ", fitems.Items[i].Id)
 	}
 
 	/*
